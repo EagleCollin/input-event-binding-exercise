@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'input-event-binding-exercise';
+  title = 'header';
+  getValue(event: Event): string {
+    return (event.target as HTMLInputElement).value
+  }
 }
